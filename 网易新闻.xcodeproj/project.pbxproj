@@ -21,6 +21,7 @@
 		3C8F4CB11EEC507100864164 /* BigCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8F4CB01EEC507100864164 /* BigCell.xib */; };
 		3C8F4CB31EEC555600864164 /* imagesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8F4CB21EEC555600864164 /* imagesCell.xib */; };
 		3C8F4CB61EEC5CCD00864164 /* SliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8F4CB51EEC5CCD00864164 /* SliderView.m */; };
+		3CF07DEC1EEE3C020058E8A3 /* newsDetail.css in Resources */ = {isa = PBXBuildFile; fileRef = 3CF07DEB1EEE3C020058E8A3 /* newsDetail.css */; };
 		8BE14A93C973CAAC7B03D8F6 /* libPods-网易新闻.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB01E60BEF9A7C869168C257 /* libPods-网易新闻.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		3C8F4CB21EEC555600864164 /* imagesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = imagesCell.xib; sourceTree = "<group>"; };
 		3C8F4CB41EEC5CCD00864164 /* SliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderView.h; sourceTree = "<group>"; };
 		3C8F4CB51EEC5CCD00864164 /* SliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderView.m; sourceTree = "<group>"; };
+		3CF07DEB1EEE3C020058E8A3 /* newsDetail.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = newsDetail.css; sourceTree = "<group>"; };
 		68A2C0AA7EB395F7B46655F6 /* Pods-网易新闻.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-网易新闻.release.xcconfig"; path = "Pods/Target Support Files/Pods-网易新闻/Pods-网易新闻.release.xcconfig"; sourceTree = "<group>"; };
 		7952807F83D45AA2B24F0DFA /* Pods-网易新闻.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-网易新闻.debug.xcconfig"; path = "Pods/Target Support Files/Pods-网易新闻/Pods-网易新闻.debug.xcconfig"; sourceTree = "<group>"; };
 		BB01E60BEF9A7C869168C257 /* libPods-网易新闻.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-网易新闻.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +98,7 @@
 				3C2A96221EEBED6D00F433D7 /* Assets.xcassets */,
 				3C2A96241EEBED6D00F433D7 /* LaunchScreen.storyboard */,
 				3C2A96271EEBED6D00F433D7 /* Info.plist */,
+				3CF07DEB1EEE3C020058E8A3 /* newsDetail.css */,
 				3C2A96161EEBED6D00F433D7 /* Supporting Files */,
 			);
 			path = "网易新闻";
@@ -236,6 +239,7 @@
 				3C2A96261EEBED6D00F433D7 /* LaunchScreen.storyboard in Resources */,
 				3C2A96231EEBED6D00F433D7 /* Assets.xcassets in Resources */,
 				3C8F4CB31EEC555600864164 /* imagesCell.xib in Resources */,
+				3CF07DEC1EEE3C020058E8A3 /* newsDetail.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,11 +418,14 @@
 			baseConfigurationReference = 7952807F83D45AA2B24F0DFA /* Pods-网易新闻.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "网易新闻/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.king.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -427,11 +434,14 @@
 			baseConfigurationReference = 68A2C0AA7EB395F7B46655F6 /* Pods-网易新闻.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "网易新闻/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.king.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

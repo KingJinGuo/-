@@ -190,6 +190,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    
+    //设置 当前的选中cell 的效果
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     //获取点击 cell 的对应的模型
     NewsModel *news = _newsList[indexPath.row];
     
